@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(36, 3, 67);
+        }
+        .dis {
+            height: 600px;
+            width: 600px;
+            background-color: #dac0ee;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 40px;
+            margin-top: 50px;
+            border: 7px solid rgb(255, 4, 4);
+            padding-inline: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-weight: 1000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .b {
+            background-color: yellow;
+            border-radius: 5px;
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dis">
+        <h1>Disclaimer</h1>
+        <br><br>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to our darkspot site. Please read this disclaimer carefully.
+        <p>The site contains dark humor that may be offensive or disturbing to some audience.</p>
+        <p>You must be 18 years or older to access and use this website. By accessing this site,</p>
+        <p>you acknowledge that the content is intended for entertainment and may not</p>
+        <p>be suitable for all viewers. The content is intended to be provocative and should not be taken </p>
+        <p>seriously. We are not liable for any emotional distress or offense taken from this site.</p>
+        <p>We are not responsible for the content of this site. You agree to this disclaimer and our</p>
+        <p>terms of service. If you do not agree with these terms, please exit the site immediately.</p>
+        </h4>
+        <br><br>
+        <input type="checkbox" id="termsCheckbox">
+        <label for="termsCheckbox" style="font-weight: 900;">Terms and conditions</label>
+        <br>
+        <center><button class="b" id="visitButton">Visit</button></center>
+    </div>
+
+    <script>
+        document.getElementById('visitButton').addEventListener('click', function() {
+            var checkbox = document.getElementById('termsCheckbox');
+            if (checkbox.checked) {
+                window.location.href = 'home.html';
+            } else {
+                alert('You must agree to the terms and conditions before proceeding.');
+            }
+        });
+    </script>
+</body>
+</html>
